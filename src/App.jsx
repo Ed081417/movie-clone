@@ -1,17 +1,11 @@
-import { useState } from 'react'
-import './App.css'
+import NavbarTop from './components/navbarTop';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-      <button class="btn btn-primary">Button</button>
+      <div className='container mx-auto px-4 mt-5'>
+        <NavbarTop />
+      </div>
     </>
   )
 }
-
-export default App
